@@ -41,11 +41,11 @@ struct ContentView: View {
         AnimatedTabView(selection: $selectTab){
             /// you can use the Native Tab just like normal Tabview
             Tab.init(AppTab.call.title, systemImage: AppTab.call.symbolImage, value: .call){
-                ItemListView(items: items, addItem: addItem, deleteItems: deleteItems)
+                Home()
             }
             
             Tab.init(AppTab.notifications.title, systemImage: AppTab.notifications.symbolImage, value: .notifications){
-                Text("Notifications")
+                ItemListView(items: items, addItem: addItem, deleteItems: deleteItems)
             }
             
             Tab.init(AppTab.settings.title, systemImage: AppTab.settings.symbolImage, value: .settings){

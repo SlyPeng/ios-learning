@@ -100,6 +100,6 @@ fileprivate extension UIView{
 }
 
 
-//#Preview {
-//    AnimatedTabView()
-//}
+#Preview {
+    ContentView()
+}
